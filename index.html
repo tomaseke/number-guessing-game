@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="index.js" defer></script>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+    <form>
+        <div id="inputs">
+        <h1>NUMBER GUESSING GAME</h1>
+        <div id="range-tooltip">
+        <input id="range" placeholder="Choose a range" type="text" autocomplete="off">
+        <div id="tooltip" data-tooltip="E.g. if you type 10, the randomly generated number will be between 0-10 including the 10.">
+        <span class="material-icons">&#xE887;</span>
+        </div>
+        </div>
+        <input id="guess" placeholder="Guess in your range" type="text" autocomplete="off">
+        </div>
+        <p id="probability-error"></p>
+        <div id="buttons">
+        <button id="guess-button">GUESS</button>
+        <button id="reset-button">RESET SCORE</button>
+        </div>
+        <p id="random-num"></p>
+        <p id="score"></p>
+        <div id="instructions">
+        <h3>INSTRUCTIONS</h3>
+        <p id="text">Your task is to guess the number that your device is going to generate randomly every time you take a guess. You first have to choose a range in which the randomly generated number is going to be. The second input field is for your guess.</p>
+        </div>
+    </form>
+    <!-- <button id="test"></button> -->
+</body>
+</html>
