@@ -80,7 +80,7 @@ function generateNumOtherThanGuess(range, guess){
 function main(){
     let guess = Number(document.getElementById('guess').value)
     let range = Number(document.getElementById('range').value)
-    if(guess && range){
+    if(guess && range || guess == 0 && range){
         isGuessInRange(guess, range)
         if(!guessOutOfRange){
             if(!wifeMode){
